@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de variables | Análisis de Datos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#discreta">DATOS DISCRETOS</a>
+        <a href="#continua">DATOS CONTINUOS</a>
+        <a href="#cualitativa">DATOS CUALITATIVOS</a>
+    </nav>
+
+    <header>
+        <h1>Probabilidad y estadistica</h1>
+        <p>Análisis comparativo de tipos de variables cuantitativos discretos, cuantitativos continuos y cualitativos</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="discreta" class="card">
+            <span class="badge badge-discreta">Cuantitativa Discreta</span>
+            <h2>Número de Hijos por Familia</h2>
+            <p>Se realizó un estudio en 100 hogares para determinar el numero de hijos por familia de una pequeña poblacion mediante el conteo de individuos.</p>
+            
+            <div class="data-viewer">
+                <h4>(n=100)</h4>
+                <div class="raw-text">
+                    0, 3, 2, 2, 3, 3, 0, 4, 4, 3, 2, 2, 3, 0, 1, 1, 2, 3, 2, 1, 0, 2, 2, 1, 3, 2, 1, 2, 1, 0, 5, 2, 1, 2, 3, 2, 0, 1, 2, 4, 2, 1, 0, 2, 3, 1, 2, 2, 0, 1, 2, 1, 3, 2, 2, 4, 1, 2, 0, 2, 1, 3, 2, 2, 1, 0, 2, 3, 1, 2, 1, 2, 2, 4, 0, 1, 2, 3, 2, 1, 1, 2, 2, 0, 2, 1, 2, 3, 1, 2, 0, 2, 2, 1, 3, 2, 0, 1, 2, 1
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>clase (hijos) (x<sub>i</sub>)</th>
+                        <th>Frecuencia Absoluta (f<sub>a</sub>)</th>
+                        <th>Frecuencia relativa (f<sub>r</sub>)</th>
+                        <th>Frecuencia acumulada (f<sub>acum</sub>)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>0</td><td>14</td><td>14%</td><td>14</td></tr>
+                    <tr><td>1</td><td>25</td><td>25%</td><td>39</td></tr>
+                    <tr><td>2</td><td>40</td><td>40%</td><td>79</td></tr>
+                    <tr><td>3</td><td>15</td><td>15%</td><td>94</td></tr>
+                    <tr><td>4</td><td>5</td><td>5%</td><td>99</td></tr>
+                    <tr><td>5</td><td>1</td><td>1%</td><td>100</td></tr>
+                    
+                    <tr><td>TOTAL</td><td>n=100</td><td>100%</td><td>100</td></tr>
+                </tbody>
+            </table>
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/hijos/hijos_trans.png?raw=true" width="400" height="341" />
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/hijos/poligonohijos_trans.png?raw=true" width="400" height="341" />
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/hijos/diagramahijos_trans.png?raw=true" width="400" height="341" />
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/hijos/ojivahijos_trans.png?raw=true" width="400" height="341" />
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/hijos/pastelhijos_trans.png?raw=true" height="341" />
+        </section>
+
+        <section id="continua" class="card">
+            <span class="badge badge-continua">Cuantitativa Continua</span>
+            <h2>Peso de Paquetes de Café (Gramos)</h2>
+            <p>Se realizó un análisis de precisión en el envasado de 100 unidades de paquetes de cafe. Los datos obtenidos mediante instrumentos de medición fueron los siguentes.</p>
+            
+            <div class="data-viewer">
+                <h4> (n=100)</h4>
+                <div class="raw-text">
+                    495.2, 501.3, 498.5, 500.1, 502.4, 497.8, 499.0, 500.5, 503.1, 496.4, 501.1, 499.2, 500.8, 498.3, 502.1, 497.5, 500.3, 501.9, 499.7, 504.2, 496.1, 498.8, 500.0, 501.5, 497.2, 502.7, 499.4, 500.9, 498.1, 503.5, 495.8, 501.2, 499.6, 500.4, 502.8, 497.1, 498.9, 501.7, 500.2, 496.9, 499.1, 502.3, 498.6, 500.6, 497.4, 501.4, 499.9, 503.8, 496.7, 500.7, 502.0, 498.2, 501.6, 499.5, 500.1, 497.9, 502.5, 498.4, 500.8, 496.3, 501.0, 499.3, 503.2, 497.6, 500.5, 502.2, 498.7, 501.8, 499.8, 496.5, 500.4, 501.1, 497.3, 502.9, 499.0, 500.3, 498.0, 503.6, 496.0, 500.9, 502.1, 498.5, 501.3, 499.2, 500.0, 497.7, 502.4, 498.8, 501.5, 496.2, 500.6, 502.7, 499.4, 501.9, 497.0, 500.2, 503.4, 498.1, 501.4, 499.7
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>clase</th>
+                        <th>límite inferior</th>
+                        <th>límite superior</th>
+                        <th>Marca Clase</th>
+                        <th>(f<sub>a</sub>)</th>
+                        <th>(f<sub>r</sub>)</th>
+                        <th>(f<sub>acum</sub>)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>495.20</td><td>496.33</td><td>495.76</td><td>6</td><td>6%</td><td>6</td></tr>
+                    <tr><td>2</td><td>496.33</td><td>497.45</td><td>496.88</td><td>9</td><td>9%</td><td>15</td></tr>
+                    <tr><td>3</td><td>497.45</td><td>498.58</td><td>498.01</td><td>13</td><td>13%</td><td>28</td></tr>
+                    <tr><td>4</td><td>498.58</td><td>499.70</td><td>499.13</td><td>15</td><td>15%</td><td>43</td></tr>
+                    <tr><td>5</td><td>499.70</td><td>500.83</td><td>500.26</td><td>21</td><td>21%</td><td>64</td></tr>
+                    <tr><td>6</td><td>500.83</td><td>501.95</td><td>501.38</td><td>17</td><td>17%</td><td>81</td></tr>
+                    <tr><td>7</td><td>501.95</td><td>503.08</td><td>502.51</td><td>12</td><td>12%</td><td>93</td></tr>
+                    <tr><td>8</td><td>503.08</td><td>504.20</td><td>503.63</td><td>7</td><td>7%</td><td>100</td></tr>
+                    <tr><td>TOTAL</td><td>-</td><td>-</td><th>-</th><th>100</th><th>100%</th><th>100</th></tr>
+                </tbody>
+            </table>
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/cafe/cafe_trans.png?raw=true" width="400" height="341" />
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/cafe/poligonocafe_trans.png?raw=true" width="400" height="341" />
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/cafe/diagramacafe_trans.png?raw=true" width="400" height="341" />
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/cafe/ojivacafe_trans.png?raw=true" width="400" height="341" />
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/cafe/pastelcafe_trans.png?raw=true" width="400" height="341" />
+        </section>
+
+        <section id="cualitativa" class="card">
+            <span class="badge badge-cualitativa">Cualitativa </span>
+            <h2>Preferencias de Cine</h2>
+            <p>Se realizó un estudio sobre los gustos cinematográficos a 100 jovenes, recolectando los siguentes resultados:</p>
+            
+            <div class="data-viewer">
+                <h4>Categorías Identificadas</h4>
+                <div class="raw-text">
+                    Comedia, Comedia, Drama, Comedia, Terror, Ciencia Ficción, Comedia, Comedia, Drama, Drama, Terror, Acción, Comedia, Drama, Acción, Ciencia Ficción, Acción, Comedia, Terror, Acción, Drama, Comedia, Acción, Acción, Terror, Drama, Acción, Comedia, Ciencia Ficción, Acción, Comedia, Drama, Terror, Acción, Acción, Comedia, Drama, Terror, Ciencia Ficción, Acción, Comedia, Acción, Drama, Terror, Acción, Comedia, Acción, Ciencia Ficción, Acción, Comedia, Drama, Terror, Acción, Comedia, Acción, Drama, Terror, Ciencia Ficción, Acción, Comedia, Acción, Drama, Terror, Acción, Comedia, Ciencia Ficción, Acción, Comedia, Drama, Terror, Acción, Comedia, Acción, Drama, Terror, Ciencia Ficción, Acción, Comedia, Acción, Drama, Terror, Acción, Comedia, Ciencia Ficción, Acción, Comedia, Drama, Terror, Acción, Comedia, Acción, Ciencia Ficción, Acción, Comedia, Drama, Terror, Acción, Comedia, Drama, Acción
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Clase (Género)</th>
+                        <th>Frecuencia Absoluta (f<sub>a</sub>)</th>
+                        <th>Frecuencia Relativa (f<sub>r</sub>)</th>
+                        <th>Frecuencia Acumulada (f<sub>acum</sub>)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Acción</td><td>32</td><td>32%</td><td>32</td></tr>
+                    <tr><td>Comedia</td><td>25</td><td>25%</td><td>57</td></tr>
+                    <tr><td>Drama</td><td>18</td><td>18%</td><td>75</td></tr>
+                    <tr><td>Terror</td><td>15</td><td>15%</td><td>90</td></tr>
+                    <tr><td>Ciencia Ficción</td><td>10</td><td>10%</td><td>100</td></tr>
+                    <tr><td>TOTAL</td><td>100</td><td>100%</td><td>100</td></tr>
+                </tbody>
+                </table>
+     
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/peliculas/pelis_trans.png?raw=true" width="400" height="341" />
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/peliculas/poligonopelis_trans.png?raw=true" width="400" height="341" />
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/peliculas/diagramapelis_trans.png?raw=true" width="400" height="341" />
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/peliculas/ojivapelis_trans.png?raw=true" width="400" height="341" />
+            <img src="https://github.com/luis270-web/2026_PE_T1_250110939/blob/main/imagenes/peliculas/pastelpelis_trans.png?raw=true" width="400" height="341" />
+        </section>
+    </div>
+
+    <div class="footer"></div>
+</body>
+</html>
