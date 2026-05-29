@@ -70,8 +70,7 @@ header p { opacity: 0.8; margin-top: 10px; font-weight: 300; }
     border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Se eliminó el cambio a mayúsculas aquí */
 }
 
 .badge-discreta { background: #e0f2fe; color: var(--primary); }
@@ -88,7 +87,11 @@ h2 { margin-top: 0; font-size: 1.8rem; }
     border: 1px dashed #ced4da;
 }
 
-.data-viewer h4 { margin-top: 0; color: var(--gray); font-size: 0.8rem; text-transform: uppercase; }
+.data-viewer h4 { 
+    margin-top: 0; 
+    color: var(--gray); 
+    font-size: 0.8rem; /* Se eliminó el cambio a mayúsculas aquí */
+}
 
 .raw-text {
     font-family: 'Courier New', monospace;
@@ -108,11 +111,10 @@ th {
     background: #f8f9fa;
     color: var(--gray);
     font-weight: 600;
-    text-transform: uppercase;
     font-size: 0.75rem;
     padding: 15px;
     text-align: center;
-    border-bottom: 2px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6; /* Se eliminó el cambio a mayúsculas aquí */
 }
 
 td {
